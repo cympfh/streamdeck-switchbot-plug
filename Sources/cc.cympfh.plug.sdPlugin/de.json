@@ -1,0 +1,16 @@
+{
+  "Description": "Nimm diese Vorlage für dein erstes Plugin",
+  "Name": "Kitchen Timer",
+  "Category": "Util",
+  "cc.cympfh.plug.action": {
+    "Name": "Kitchen Timer",
+    "Tooltip": "Dies ist die einzige 'Action' in diesem Template"
+  },
+  "Localization": {
+    "More info": "Mehr Infos",
+    "Message": "Nachricht",
+    "Click Me": "Klicke mich",
+    "Button": "Taste"
+
+  }
+}

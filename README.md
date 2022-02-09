@@ -1,0 +1,2 @@
+# streamdeck-template-by-cympfh
+

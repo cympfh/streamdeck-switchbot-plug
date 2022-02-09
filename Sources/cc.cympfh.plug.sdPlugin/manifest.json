@@ -1,0 +1,38 @@
+{
+  "Actions": [
+    {
+      "Icon": "action/images/actionimage",
+      "Name": "Plug",
+      "States": [
+        {
+          "Image": "action/images/action"
+        }
+      ],
+      "Tooltip": "Toggle Switchbot Plug",
+      "UUID": "cc.cympfh.plug.action"
+    }
+  ],
+  "SDKVersion": 2,
+  "Author": "cympfh",
+  "CodePath": "index.html",
+  "PropertyInspectorPath": "propertyinspector/index.html",
+  "Description": "Toggle Switchbot Plug",
+  "Name": "Plug",
+  "Icon": "action/images/action",
+  "URL": "https://github.com/cympfh",
+  "Version": "0.0.1",
+  "OS": [
+    {
+        "Platform": "mac",
+        "MinimumVersion" : "10.11"
+    },
+    {
+        "Platform": "windows",
+        "MinimumVersion" : "10"
+    }
+  ],
+  "Software":
+    {
+        "MinimumVersion" : "4.1"
+  }
+}
