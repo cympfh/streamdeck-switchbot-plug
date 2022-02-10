@@ -6,6 +6,9 @@
       "States": [
         {
           "Image": "action/images/action"
+        },
+        {
+          "Image": "action/images/action"
         }
       ],
       "Tooltip": "Toggle Switchbot Plug",

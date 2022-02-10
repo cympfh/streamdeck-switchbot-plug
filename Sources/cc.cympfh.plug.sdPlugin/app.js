@@ -65,12 +65,14 @@ const action = {
             .then(data => {
                 self.debug(`data=${JSON.stringify(data)}`, 'showStatus');
                 self.settings.power = data.body.power;
+                self.setState(jsn, self.settings.power === 'on' ? 1 : 0);
                 self.setTitle(jsn, self.settings.power);
             });
     },
 
     toggle: function(jsn) {
-        this.setTitle(jsn, '...');
+        this.setTitle(jsn, '...'); // waiting title
+        this.setState(jsn, this.settings.power === 'on' ? 0 : 1); // next state icon
         switchbot.toggle(this.settings.api_token, this.settings.device_id, this.settings.power)
           .then(data => {
               this.debug(JSON.stringify(data), 'toggle');
@@ -129,6 +131,12 @@ const action = {
     setTitle: function(jsn, title) {
         this.debug(`Set title=${title}`, 'setTitle');
         $SD.api.setTitle(jsn.context, title);
+    },
+
+    setState: function(jsn, state) {
+        this.debug(`Set state=${state}`, 'setState');
+        $SD.api.setState(jsn.context, {state: state});
+        $SD.api.setState(jsn.context, state);
     },
 
     debug: function(msg, caller, tagColor) {
